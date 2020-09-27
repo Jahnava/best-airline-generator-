@@ -23,7 +23,7 @@
 	  string airline5 = "Oceanic Airlines";
 	  string airline6 = "Belarus Airways";
 
-	  //welcome statement
+	  //intro statement
 	  cout << "Welcome to the Airline Selector Program." << endl << endl;
 	  cout << "Please answer the following questions and we will help select the best airline(s) for you." << endl << endl;
 
@@ -62,35 +62,35 @@
 	  cout << "Based on your answers, the following are the best airlines for you: ";
 	  cout << "\n\n\n";
 	  
-		 //first answer
+		
 	  
 	  // Trans American Airlines 
 	  if (choice1 == "yes" && choice2 == "yes" && choice3 == "yes")
 		  cout << airline1 << endl << endl;
-		  
+
 	  //Atlantic International Airlines
-	  if (choice1 == "no" && choice2 == "no" && choice3 == "no")
+	  else if (choice1 == "no" && choice2 == "no" && choice3 == "no")
 		  cout << airline2 << endl << endl;
 
 	  //South Pacific Airlines
-	  if (choice1 == "yes" && choice2 == "no" && choice3 == "yes")
+	  else if (choice1 == "yes" && choice2 == "no" && choice3 == "yes")
 		  cout << airline3 << endl << endl;
 
-	 //Windsor Airlines
-	 if (choice1 == "no" && choice2 == "yes" && choice3 == "no")
-		 cout << airline4 << endl << endl;
+	  //Windsor Airlines
+	  else if (choice1 == "no" && choice2 == "yes" && choice3 == "no")
+		  cout << airline4 << endl << endl;
 
-	 //Oceanic Airlines
-	 if (choice1 == "yes" && choice2 == "no" && choice3 == "no")
-		 cout << airline5 << endl << endl;
+	  //Oceanic Airlines
+	  else if (choice1 == "yes" && choice2 == "no" && choice3 == "no")
+		  cout << airline5 << endl << endl;
 
-	 //Belarus Airways
-	 if (choice1 == "no" && choice2 == "no" && choice3 == "yes")
-		 cout << airline6 << endl << endl;
-		 
-	//closing statement	
-	cout << endl << endl;
-	cout << "Thank you for using the Airline Selector Program. Fly the Skies!"<< endl << endl <<endl <<endl;
+	  //Belarus Airways
+	  else if (choice1 == "no" && choice2 == "no" && choice3 == "yes")
+		  cout << airline6 << endl << endl;
+
+	  else {
+		  cout << "None of the airlines specifically meet your preferences, please try again." << endl << endl << endl << endl;
+	  } 
 	
 
 	system("pause"); 
